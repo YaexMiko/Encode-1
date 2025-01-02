@@ -7,7 +7,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "23898744")  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "0b13c810c80b548604650cbe3c3db0c3") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7740337190:AAHQwdPxIfoJtnJEti2vQdngjfpkeZAitOA") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7900603425:AAEie0wbcz44gKL4K1YmmX-7HxfSUE09f7g") # ⚠️ Required
     FORCE_SUB = os.environ.get('FORCE_SUB', 'Era_Bot_Support') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
@@ -24,7 +24,7 @@ class Config(object):
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
-    PORT = int(os.environ.get("PORT", "1980"))
+    PORT = int(os.environ.get("PORT", "1986"))
 
 
     caption = """
