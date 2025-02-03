@@ -7,7 +7,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "23898744")  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "0b13c810c80b548604650cbe3c3db0c3") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7900603425:AAEie0wbcz44gKL4K1YmmX-7HxfSUE09f7g") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7900603425:AAExRjcURz_m0jwA_AwP4WkXcq0NnziQC_8") # ⚠️ Required
     FORCE_SUB = os.environ.get('FORCE_SUB', 'Era_Bot_Support') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
@@ -20,21 +20,23 @@ class Config(object):
     ADMIN = int(os.environ.get("ADMIN", "8108281129")) # ⚠️ Required
     LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002381050327')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
-    START_PIC = os.environ.get("START_PIC", "https://graph.org/file/70fc16fcba8f92685433f-f9125e16c551344ad3.jpg")
+    START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/af22bcdafa496d1f0c04c-d2bb1b5fbe230b18ac.jpg")
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
-    PORT = int(os.environ.get("PORT", "1986"))
+    PORT = int(os.environ.get("PORT", "1980"))
 
 
     caption = """
-**File Name**: {0}
+────────────────────────────
+**ғɪʟᴇ ɴᴀᴍᴇ**: {0}
 
-**Original File Size:** {1}
-**Encoded File Size:** {2}
-**Compression Percentage:** {3}
-
-__Downloaded in {4}__
-__Encoded in {5}__
-__Uploaded in {6}__
+**ᴏʀɪɢɪɴᴀʟ ғɪʟᴇ sɪᴢᴇ:** {1}
+**ᴇɴᴄᴏᴅᴇᴅ ғɪʟᴇ sɪᴢᴇ:** {2}
+**ᴄᴏᴍᴘʀᴇssɪᴏɴ ᴘᴇʀᴄᴇɴᴛᴀɢᴇ:** {3}
+────────────────────────────
+__ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴ{4}__
+__ ᴠɪᴅᴇᴏ ᴇɴᴄᴏᴅᴇᴅ ɪɴ{5}__
+__ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇ ɪɴ{6}__
+────────────────────────────
 """
